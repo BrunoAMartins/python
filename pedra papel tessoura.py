@@ -29,23 +29,23 @@ tessoura = '''
 
 game_imagens = [pedra, papel, tessoura]
 
-escolha = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors.\n"))
+escolha = int(input("Qual voce escolhe? Escrava 0 para pedra, 1 para papel ou 2 para tessoura.\n"))
 print(game_imagens[escolha])
 
 cp_escolha = random.randint(0, 2)
-print("Computer chose:")
+print("Escolha do computador:")
 print(game_imagens[cp_escolha])
 
 if escolha >= 3 or escolha < 0: 
-  print("You typed an invalid number, you lose!") 
+  print("voce digitou um numeor invalido, Voce perdeu!") 
 elif escolha == 0 and cp_escolha == 2:
-  print("You win!")
+  print("Voce ganhou!")
 elif cp_escolha == 0 and escolha == 2:
-  print("You lose")
+  print("Voce perdeu")
 elif cp_escolha > escolha:
-  print("You lose")
+  print("Voce perdeu")
 elif escolha > cp_escolha:
-  print("You win!")
+  print("Voce ganhou")
 elif cp_escolha == escolha:
-  print("It's a draw")
+  print("E um empate")
 
